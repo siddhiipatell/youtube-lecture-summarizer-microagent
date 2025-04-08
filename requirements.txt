@@ -1,0 +1,6 @@
+streamlit
+ollama
+youtube_transcript_api
+reportlab
+dotenv
+markdown2
