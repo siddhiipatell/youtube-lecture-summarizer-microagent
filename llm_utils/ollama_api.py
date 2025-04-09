@@ -1,5 +1,4 @@
 from ollama import Client
-import os
 import re
 import os
 from dotenv import load_dotenv
@@ -34,6 +33,6 @@ def call_ollama_api(model, messages, temperature, format_schema=None, stream=Fal
         return stream_generator()
 
     response_content = response['message']['content']
-    if model == "deepseek-r1:14b":
+    if model.startswith("deepseek"):
         response_content = re.sub(r"<think>.*?</think>", "", response_content, flags=re.DOTALL)
     return response_content

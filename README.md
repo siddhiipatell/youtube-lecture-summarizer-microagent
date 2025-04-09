@@ -26,7 +26,7 @@ Perfect for students, educators, or lifelong learners who want to **learn smarte
 
 - **Frontend**: Streamlit
 - **Backend**: Python
-- **AI Utilities**: OpenAI LLM (for summarization and quiz)
+- **AI Utilities**: Ollama LLMs (for summarization and quiz)
 - **PDF Generation**: ReportLab
 - **Transcripts**: `youtube-transcript-api`
 
@@ -78,11 +78,15 @@ streamlit run app.py
 
 ```bash
 ├── app.py                     # Streamlit app interface
+├── LICENSE
 ├── utils/
 │   ├── transcript_utils.py    # Gets transcript from YouTube
 │   ├── summarizer.py          # AI summarization logic
 │   ├── quiz_generator.py      # AI quiz generation
 │   └── pdf_generator.py       # Markdown → PDF conversion
+├── llm_utils
+│   ├── __init__.py
+│   └── ollama_api.py
 ├── requirements.txt
 └── README.md
 ```
