@@ -46,6 +46,7 @@ pip install -r requirements.txt
 ```
 
 Set your Ollama base URL and model name (used for summarization and quiz)
+
 Ollama runs on localhost:11434 by default:
 
 ```bash
