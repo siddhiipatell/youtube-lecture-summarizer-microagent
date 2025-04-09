@@ -26,7 +26,7 @@ Perfect for students, educators, or lifelong learners who want to **learn smarte
 
 - **Frontend**: Streamlit
 - **Backend**: Python
-- **AI Utilities**: OpenAI LLM (for summarization and quiz)
+- **AI Utilities**: Ollama LLMs (for summarization and quiz)
 - **PDF Generation**: ReportLab
 - **Transcripts**: `youtube-transcript-api`
 
