@@ -10,7 +10,7 @@ def call_ollama_api(model, messages, temperature, format_schema=None, stream=Fal
     """
     Call the ollama api and return the response.
     """
-    BASE_URL=os.getenv("BASE_URL")
+    BASE_URL=os.getenv("OLLAMA_BASE_URL")
     
     client = Client(BASE_URL)
 

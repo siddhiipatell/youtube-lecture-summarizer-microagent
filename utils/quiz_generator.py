@@ -1,4 +1,7 @@
 from llm_utils import call_ollama_api
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def generate_quiz(transcript_text):
     prompt = f"""Generate 3 multiple choice questions and 2 true/false questions based on the following lecture:\n\n{transcript_text}"""
@@ -27,7 +30,7 @@ def generate_quiz(transcript_text):
     }
 
     response = call_ollama_api(
-        model="deepseek-r1:14b",
+        model=os.getenv("OLLAMA_MODEL"),
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7,
         # format_schema=response_format["json_schema"]["schema"]
