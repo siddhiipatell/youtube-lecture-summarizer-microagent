@@ -14,8 +14,6 @@ This Streamlit-based AI microagent allows you to:
 
 Perfect for students, educators, or lifelong learners who want to **learn smarter, not harder**.
 
----
-
 ## 🚀 Features
 
 - 📄 **Transcript Extraction** from YouTube videos
@@ -24,8 +22,6 @@ Perfect for students, educators, or lifelong learners who want to **learn smarte
 - 📥 **PDF Export** of notes and questions
 - ⚡️ Built with LLMs and modular utilities
 
----
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: Streamlit
@@ -33,8 +29,6 @@ Perfect for students, educators, or lifelong learners who want to **learn smarte
 - **AI Utilities**: OpenAI LLM (for summarization and quiz)
 - **PDF Generation**: ReportLab
 - **Transcripts**: `youtube-transcript-api`
-
----
 
 ## 📦 Installation
 
@@ -65,16 +59,13 @@ streamlit run app.py
 
 ## 🧪 Example Usage
 1. Paste a YouTube lecture URL
-
 2. Let the agent fetch and summarize the transcript
-
 3. View notes and auto-generated quiz
-
 4. Download it all as a PDF
 
 ## 📁 Project Structure
 
-pgsql
+```bash
 ├── app.py                     # Streamlit app interface
 ├── utils/
 │   ├── transcript_utils.py    # Gets transcript from YouTube
@@ -83,6 +74,7 @@ pgsql
 │   └── pdf_generator.py       # Markdown → PDF conversion
 ├── requirements.txt
 └── README.md
+```
 
 ## 🙌 Contributing
 Pull requests are welcome! If you find a bug or want to suggest a feature, feel free to open an issue.
@@ -90,10 +82,8 @@ Pull requests are welcome! If you find a bug or want to suggest a feature, feel 
 ## 📄 License
 This project is licensed under the MIT License.
 
-✨ Acknowledgements
-OpenAI
-
-Streamlit
-
-youtube-transcript-api
+## ✨ Acknowledgements
+- OpenAI
+- Streamlit
+- youtube-transcript-api
 
