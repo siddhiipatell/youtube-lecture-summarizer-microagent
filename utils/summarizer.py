@@ -1,5 +1,8 @@
 import os
 from llm_utils import call_ollama_api
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def summarize_transcript(transcript_text):
     prompt = f"""
@@ -24,7 +27,7 @@ def summarize_transcript(transcript_text):
     """
     
     response = call_ollama_api(
-        model="deepseek-r1:14b",
+        model=os.getenv("OLLAMA_MODEL"),
         messages=[{"role": "user", "content": prompt}],
         temperature=0.6,
     )

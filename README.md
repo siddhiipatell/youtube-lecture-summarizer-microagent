@@ -45,10 +45,21 @@ cd youtube-lecture-summarizer-microagent
 pip install -r requirements.txt
 ```
 
-Set your OpenAI API key (required for summarization and quiz):
+Set your Ollama base URL and model name (used for summarization and quiz)
+
+Ollama runs on localhost:11434 by default:
 
 ```bash
-export OPENAI_API_KEY=your-key-here  # Or use a .env file
+export OLLAMA_BASE_URL=http://localhost:11434
+export OLLAMA_MODEL=llama3  # You can use llama2, mistral, or any model you've pulled
+```
+
+optionally in ```.env```
+
+```bash
+# .env
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=llama3 # You can use llama2, mistral, or any model you've pulled
 ```
 
 Run the app:
